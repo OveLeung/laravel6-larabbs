@@ -22,6 +22,9 @@ return [
         'qcloud' => [
             'sdk_app_id' => env('QCLOUD_SMS_APP_ID'),
             'app_key' => env('QCLOUD_SMS_APP_KEY'),
+            'sign_name' => 'OveLeung', //签名
+            'time' => env('QCLOUD_SMS_TIME'), //有效时间
+            'tpl_id' => env('QCLOUD_SMS_TPL_ID'), //模板 ID
         ],
     ],
 ];

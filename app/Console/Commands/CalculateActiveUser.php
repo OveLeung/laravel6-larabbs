@@ -22,7 +22,5 @@ class CalculateActiveUser extends Command
         $user->calculateAndCacheActiveUsers();
 
         $this->info("成功生成！");
-
-        app('log')->info("test command");
     }
 }
