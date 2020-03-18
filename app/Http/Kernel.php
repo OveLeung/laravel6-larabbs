@@ -70,8 +70,8 @@ class Kernel extends HttpKernel
         'api' => [
             \App\Http\Middleware\AcceptHeader::class,
             // 使用别名来调用中间件
-            // 请见：https://learnku.com/docs/laravel/5.7/middleware#为路由分配中间件
-            'throttle:60,1',
+            // 注释，防止多次调用，导致计数出错
+            //'throttle:60,1',
             'bindings',
         ],
     ];
