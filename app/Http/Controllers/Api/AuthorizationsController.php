@@ -6,6 +6,7 @@ use App\Http\Requests\Api\AuthorizationRequest;
 use App\Http\Requests\Api\SocialAuthorizationRequest;
 use App\Models\User;
 use Arr;
+use Illuminate\Auth\AuthenticationException;
 use Illuminate\Http\Request;
 
 class AuthorizationsController extends Controller
